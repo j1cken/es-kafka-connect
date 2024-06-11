@@ -6,4 +6,6 @@ mv confluentinc-kafka-connect-elasticsearch-14.0.17/lib/kafka-connect-elasticsea
 mv confluentinc-kafka-connect-elasticsearch-14.0.17/lib/*.jar /opt/kafka/libs/ && \
 rm -rf confluentinc-kafka-connect-elasticsearch-14.0.17* && \
 chmod a+r /opt/kafka/plugins/*
+ADD truststore.jks /jks-stores/truststore.jks
+ADD keystore.jks /jks-stores/keystore.jks
 USER 1001
